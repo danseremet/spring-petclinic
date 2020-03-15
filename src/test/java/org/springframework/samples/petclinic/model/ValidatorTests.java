@@ -57,4 +57,9 @@ class ValidatorTests {
 		assertThat(violation.getMessage()).isEqualTo("must not be empty");
 	}
 
+	@Test
+	void shouldFail() {
+		assertThat("yes").isEqualTo("false");
+	}
+
 }
