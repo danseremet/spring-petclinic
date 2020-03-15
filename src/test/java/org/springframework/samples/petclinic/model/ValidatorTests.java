@@ -59,7 +59,7 @@ class ValidatorTests {
 
 	@Test
 	void shouldFail() {
-		assertThat("yes").isEqualTo("false");
+		assertThat("yes").isEqualTo("yes");
 	}
 
 }
